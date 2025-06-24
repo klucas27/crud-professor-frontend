@@ -1,4 +1,4 @@
-const apiURL = "http://localhost:3005/api/professores";
+const apiURL = "https://crud-professor-backend.onrender.com";
 
 const profForm = document.getElementById("profForm");
 const btnCadastrar = document.getElementById("btnCadastrar");
