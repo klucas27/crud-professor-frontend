@@ -54,7 +54,7 @@ async function carregarProfessores() {
         <strong>${p.nome}</strong> <span class="text-secondary">(${p.disciplina})</span>
       </div>
       <div>
-        <button class="btn btn-sm btn-warning me-2" onclick="editarProfessor(${p.id}, '${p.nome.replace(/'/g, "\\'")}', '${p.disciplina.replace(/'/g, "\\'")}')">
+        <button class="btn btn-sm btn-warning me-2" onclick="editarProfessor(${p.id}, '${p.nome.replace(/'/g, "\\'")}', '${(p.disciplina ?? "").replace(/'/g, "\\'")}')">
           <i class="bi bi-pencil"></i> Editar
         </button>
         <button class="btn btn-sm btn-danger" onclick="deletarProfessor(${p.id})">
